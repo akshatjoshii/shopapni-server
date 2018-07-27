@@ -13,5 +13,5 @@ app.use(express.urlencoded({ extended: false }));
 app.use(morgan("dev"));
 
 app.listen(process.env.PORT, ()=>{
-    console.log(`Server is running at ${process.env.PORT}`);
+    console.log(`Server is running at ${process.env.PORT ||3000}`);
 });
