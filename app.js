@@ -14,7 +14,7 @@ app.use(morgan("dev"));
 
 
 app.get('/', (req, res)=>{
-   res.send("Hello World!");
+   res.send(process.env.database);
 });
 
 app.listen(process.env.PORT ||3000, ()=>{
